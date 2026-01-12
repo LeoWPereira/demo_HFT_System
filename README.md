@@ -1,6 +1,6 @@
 # High-Frequency Trading System
 
-A production-grade, low-latency HFT trading system demonstrating concepts used at firms like Jump Trading, Citadel, and Jane Street.
+A production-grade, low-latency HFT trading system demonstrating concepts used at HFT firms.
 
 ## Key Features
 
@@ -107,16 +107,6 @@ make -j$(nproc)
 - **Order Submission**: < 1μs (from signal to wire)
 - **End-to-End**: < 2μs (tick-to-trade)
 
-## Interview Topics Covered
-
-✅ Lock-free data structures (atomic operations, memory ordering)  
-✅ Cache optimization (false sharing, alignment, prefetching)  
-✅ Network protocols (UDP multicast, TCP, kernel bypass)  
-✅ Low-latency C++ (move semantics, template metaprogramming)  
-✅ System design (component architecture, scalability)  
-✅ Performance measurement (TSC, hardware counters)  
-✅ Risk management and order validation  
-
 ## Learning Resources
 
 - **Books**: 
@@ -126,13 +116,3 @@ make -j$(nproc)
 - **Papers**:
   - Intel® 64 and IA-32 Architectures Optimization Reference Manual
   - "What Every Programmer Should Know About Memory" by Ulrich Drepper
-
-## Notes
-
-This is a educational implementation. Production HFT systems at Jump Trading would include:
-- FPGA/hardware acceleration
-- Full DPDK/kernel bypass
-- More sophisticated strategies
-- Extensive backtesting infrastructure
-- Compliance and audit trails
-- Multi-venue connectivity
